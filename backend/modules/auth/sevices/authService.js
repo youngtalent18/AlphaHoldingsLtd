@@ -60,7 +60,7 @@ class AuthService {
             throw new Error("password mis-match");
         }
 
-        // we check the status of ou account
+        // we check the status of the account
         if (!user.isActive) {
             throw new Error("Account is disabled");
         }
@@ -92,6 +92,9 @@ class AuthService {
 
     }
 
+    async logout(){
+
+    }
 }
 
 

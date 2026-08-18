@@ -22,6 +22,10 @@ class AuthRepository {
     return await RefreshToken.create(payload);
   }
 
+  async deleteRefeshToken(payload){
+    return await RefreshToken.delete(payload);
+  }
+
   async createVerificationToken(payload) {
     return await VerificationToken.create(payload);
   }
